@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="563.0" prefWidth="864.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.MainMenuController">
+   <children>
+      <Pane layoutX="-190.0" layoutY="-100.0" prefHeight="563.0" prefWidth="864.0">
+         <children>
+            <ImageView fitHeight="563.0" fitWidth="864.0" layoutX="190.0" layoutY="99.0">
+               <image>
+                  <Image url="@icons/misc/mainmenu.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="393.0" layoutY="499.0" mnemonicParsing="false" onAction="#showCardInfo" prefHeight="87.0" prefWidth="174.0" text="Create">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button layoutX="676.0" layoutY="499.0" mnemonicParsing="false" onAction="#showDatabase" prefHeight="87.0" prefWidth="174.0" text="Database">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

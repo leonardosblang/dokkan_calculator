@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="563.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DatabaseController">
+   <children>
+      <Pane fx:id="pane" layoutX="-1.0" prefHeight="563.0" prefWidth="864.0" />
+      <TableView fx:id="table" layoutX="-1.0" layoutY="199.0" onMouseClicked="#clickItem" prefHeight="319.0" prefWidth="864.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="col_name" prefWidth="230.0" text="Name" />
+            <TableColumn fx:id="col_apt" prefWidth="192.0" text="APT" />
+            <TableColumn fx:id="col_team" prefWidth="186.0" text="Team" />
+            <TableColumn fx:id="col_type" prefWidth="104.0" text="Type" />
+            <TableColumn fx:id="col_rarity" prefWidth="76.0" text="Rarity" />
+         </columns>
+      </TableView>
+      <Button layoutX="740.0" layoutY="523.0" mnemonicParsing="false" onAction="#removeDatabase" text="REMOVE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutY="518.0" mnemonicParsing="false" onAction="#showMainMenu" text="&lt;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtName" layoutX="23.0" layoutY="43.0" text="?" />
+      <Label layoutX="71.0" layoutY="14.0" text="Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageIcon" fitHeight="184.0" fitWidth="178.0" layoutX="631.0" layoutY="-8.0" />
+      <Text fx:id="lbSubName" layoutX="670.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Default">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="335.0" layoutY="73.0" mnemonicParsing="false" onAction="#openImage" prefHeight="38.0" prefWidth="149.0" text="See Full Info">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="356.0" layoutY="521.0" mnemonicParsing="false" onAction="#loadData" text="LOAD DATA">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button layoutX="53.0" layoutY="92.0" mnemonicParsing="false" onAction="#updateData" prefHeight="25.0" prefWidth="90.0" text="UPDATE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="bg1" fitHeight="569.0" fitWidth="761.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@icons/misc/bg2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bg2" fitHeight="589.0" fitWidth="761.0" layoutX="109.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@icons/misc/bg2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="aptImage" fitHeight="575.0" fitWidth="858.0" layoutX="11.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <Button fx:id="close" mnemonicParsing="false" onAction="#closeButton" text="X" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

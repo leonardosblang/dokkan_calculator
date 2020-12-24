@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane1" prefHeight="420.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="426.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" width="391.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#e8e8e8" offset="0.007662835249042145" />
+                  <Stop color="#5e5e5e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Pane fx:id="pane2" layoutX="-118.0" layoutY="-73.0" prefHeight="200.0" prefWidth="304.0">
+         <children>
+            <ComboBox fx:id="themeBox" layoutX="124.0" layoutY="126.0" onAction="#selectTheme" prefWidth="150.0" />
+            <Text layoutX="153.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Theme">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button fx:id="closeButton" layoutX="154.0" layoutY="341.0" mnemonicParsing="false" onAction="#closeButtonAction" text="Close">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

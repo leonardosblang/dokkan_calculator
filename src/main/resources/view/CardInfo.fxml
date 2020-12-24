@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="563.0" minWidth="864.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CardImageController">
+   <children>
+      <Pane prefHeight="563.0" prefWidth="864.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="572.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="864.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#0957ff" />
+                        <Stop color="#d1d1d1" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <ImageView fitHeight="579.0" fitWidth="864.0">
+               <image>
+                  <Image url="@icons/misc/bg.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="txtName" layoutX="378.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goku">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtSupport" layoutX="11.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Support">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtTeam" layoutX="11.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Team">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtLinks" layoutX="11.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Links">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtCrit" layoutX="814.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRIT">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtAdd" layoutX="813.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtAPT" layoutX="278.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APT: 2,000,000">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="64.0" fitWidth="59.0" layoutX="748.0" layoutY="13.0">
+               <image>
+                  <Image url="@/icons/misc/Pot_skill_critical.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="59.0" layoutX="748.0" layoutY="83.0">
+               <image>
+                  <Image url="@/icons/misc/Pot_skill_additional.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="artPreview" fitHeight="484.0" fitWidth="455.0" layoutX="205.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="backButton" layoutX="11.0" layoutY="516.0" mnemonicParsing="false" onAction="#showCardInfo" text="&lt;">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="dbButton" layoutX="661.0" layoutY="531.0" mnemonicParsing="false" onAction="#saveToDatabase" text="SAVE TO DATABASE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imagePreview" fitHeight="150.0" fitWidth="200.0" layoutX="68.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

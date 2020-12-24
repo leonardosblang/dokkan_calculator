@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="563.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OverviewController">
+   <children>
+      <Button layoutX="25.0" layoutY="458.0" mnemonicParsing="false" onAction="#calculate" prefHeight="25.0" prefWidth="141.0" text="Calculate/Save" />
+      <TextField fx:id="leaderSkill" layoutX="21.0" layoutY="27.0" text="0" />
+      <TextField fx:id="atkStat" layoutX="24.0" layoutY="82.0" text="0" />
+      <TextField fx:id="startPassive" layoutX="21.0" layoutY="137.0" text="0" />
+      <TextField fx:id="support" layoutX="24.0" layoutY="195.0" text="0" />
+      <TextField fx:id="links" layoutX="25.0" layoutY="255.0" text="0" />
+      <TextField fx:id="activeSkill" layoutX="21.0" layoutY="318.0" text="0" />
+      <TextField fx:id="kiMultiplier" layoutX="21.0" layoutY="393.0" text="0" />
+      <TextField fx:id="buildUP" layoutX="240.0" layoutY="27.0" text="0" />
+      <TextField fx:id="AA" layoutX="240.0" layoutY="142.0" text="0" />
+      <TextField fx:id="CRIT" layoutX="240.0" layoutY="195.0" text="0" />
+      <TextField fx:id="saMultiplier" layoutX="240.0" layoutY="82.0" text="0" />
+      <Label layoutX="49.0" layoutY="-1.0" text="Leader Skill">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="57.0" text="ATK Stat">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="112.0" text="Start Passive">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="165.0" text="Support">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="52.0" text="SA Multiplier">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="223.0" text="Links">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="282.0" text="Active Skill">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="354.0" text="KI Multiplier">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="-1.0" text="BuildUP/OnSA">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="112.0" text="Additional Attack">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="165.0" text="CRIT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="498.0" text="APT :">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="aptTEXT" layoutX="109.0" layoutY="499.0" text="0">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="SE" layoutX="235.0" layoutY="355.0" mnemonicParsing="false" text="Super Effective">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="builtAA" layoutX="448.0" layoutY="15.0" mnemonicParsing="false" onAction="#checkboxAction" text="Built-in AA">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="numberAAFIELD" layoutX="448.0" layoutY="82.0" text="1" visible="false" />
+      <TextField fx:id="saCHANCEFIELD" layoutX="448.0" layoutY="142.0" text="0" visible="false" />
+      <Label fx:id="numberAALABEL" layoutX="459.0" layoutY="52.0" text="Number of AA" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="saCHANCELABEL" layoutX="463.0" layoutY="112.0" text="SA Chance" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="saRAISE" layoutX="240.0" layoutY="255.0" text="0" />
+      <Label layoutX="266.0" layoutY="223.0" text="SA Raise">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="guardBreak" layoutX="237.0" layoutY="404.0" mnemonicParsing="false" text="Guard Break">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="critCHECKBOX" layoutX="645.0" layoutY="15.0" mnemonicParsing="false" onAction="#showCrit" text="Built-in Crit">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="passiveCRIT" layoutX="651.0" layoutY="82.0" text="0" visible="false" />
+      <Label fx:id="passivecritLABEL" layoutX="668.0" layoutY="53.0" text="Passive Crit" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="linkcritLABEL" layoutX="677.0" layoutY="113.0" text="Links Crit" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="linkCRIT" layoutX="651.0" layoutY="142.0" text="0" visible="false" />
+      <CheckBox fx:id="gAA" layoutX="443.0" layoutY="245.0" mnemonicParsing="false" text="First AA Guaranteed" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="builtAAchanceFIELD" layoutX="444.0" layoutY="211.0" text="100" visible="false" />
+      <Label fx:id="builtAAchanceLABEL" layoutX="470.0" layoutY="180.0" text="AA Chance" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="countercheckbox" layoutX="651.0" layoutY="187.0" mnemonicParsing="false" onAction="#showCOUNTER" text="Counters">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="beforecounterL" layoutX="698.0" layoutY="224.0" text="Before" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="beforecounterF" layoutX="651.0" layoutY="255.0" text="0" visible="false" />
+      <Label fx:id="aftercounterL" layoutX="705.0" layoutY="284.0" text="After" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aftercounterF" layoutX="651.0" layoutY="318.0" text="0" visible="false" />
+      <Label fx:id="multipliercounterL" layoutX="685.0" layoutY="354.0" text="Multiplier" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="multipliercounterF" layoutX="651.0" layoutY="384.0" text="0" visible="false" />
+      <TextField fx:id="delayF" layoutX="240.0" layoutY="312.0" text="0" />
+      <Label layoutX="280.0" layoutY="280.0" text="Delay">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="counterSAcheckbox" layoutX="676.0" layoutY="422.0" mnemonicParsing="false" onAction="#counterSA" text="ON SA?" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="counterchanceLABEL" layoutX="664.0" layoutY="444.0" text="Counter Chance" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="enemychanceLABEL" layoutX="670.0" layoutY="496.0" text="Enemy Chance" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="enemychanceFIELD" layoutX="651.0" layoutY="524.0" text="0" visible="false" />
+      <TextField fx:id="counterChanceFIELD" layoutX="651.0" layoutY="471.0" text="0" visible="false" />
+      <CheckBox fx:id="LRcheckbox" layoutX="448.0" layoutY="284.0" mnemonicParsing="false" onAction="#showLR" text="LR">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="kiLRLABEL" layoutX="461.0" layoutY="328.0" text="KI Multiplier 2" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kiLRFIELD" layoutX="451.0" layoutY="357.0" text="0" visible="false" />
+      <Label fx:id="saLRLABEL" layoutX="460.0" layoutY="389.0" text="SA Multiplier 2" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="saLRFIELD" layoutX="451.0" layoutY="420.0" text="0" visible="false" />
+      <Label fx:id="saraiseLRLABEL" layoutX="480.0" layoutY="445.0" text="SA Raise 2" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="saraiseLRFIELD" layoutX="452.0" layoutY="475.0" text="0" visible="false" />
+      <Button layoutX="311.0" layoutY="505.0" mnemonicParsing="false" onAction="#showCardInfo" text="Card Info">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
