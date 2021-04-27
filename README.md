@@ -10,5 +10,8 @@ This project is a calculator made to work with the Mobile game Dragon Ball Z : D
 
 
 ## Demonstration :gift:
+<p align="center">
+  <img height="520" src="src/calc.gif" />
+</p>
 
 
